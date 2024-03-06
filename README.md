@@ -5,3 +5,6 @@
 
 ## Description
 Desktop software which permit to store all my songs produced as well as my friends songs.
+
+## Design
+Figma: https://www.figma.com/file/gxO8qJiG0nUh6Xbb9evjHf/Frosty's-Universe?type=design&node-id=0-1&mode=design&t=1fzcLkmE9VOjkd1s-0
