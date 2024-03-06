@@ -6,5 +6,8 @@
 ## Description
 Desktop software which permit to store all my songs produced as well as my friends songs.
 
-## Design
+## UI Design
 Figma: https://www.figma.com/file/gxO8qJiG0nUh6Xbb9evjHf/Frosty's-Universe?type=design&node-id=0-1&mode=design&t=1fzcLkmE9VOjkd1s-0
+
+## Database design
+![Frosty's_Universe_MCD drawio](https://github.com/ThunderFrost23/frostys_universe/assets/66676905/243c4ff4-e90d-43d2-8e5d-c4b7089336f3)
