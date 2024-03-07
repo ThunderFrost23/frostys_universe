@@ -1,13 +1,6 @@
 version: '3'
 
 services:
-  debian-music-storage:
-    image: debian:latest
-    container_name: music-storage
-    volumes:
-      - ./music:/music
-    command: tail -f /dev/null
-
   music-database:
     image: postgres:latest
     container_name: music-db
