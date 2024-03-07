@@ -3,6 +3,8 @@
 ![.NET Badge](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff&style=flat-square)
 ![PostgreSQL Badge](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=flat-square)
 ![MEGA Badge](https://img.shields.io/badge/MEGA-D9272E?logo=mega&logoColor=fff&style=flat-square)
+![Figma Badge](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=fff&style=flat-square)
+
 
 ## Description
 Desktop software which permit to store all my songs produced as well as my friends songs.
