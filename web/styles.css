@@ -1,0 +1,83 @@
+.mobile-msg {
+    display: none;
+}
+
+body {
+    background-image: url(./resources/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-name {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: "K2D";
+}
+
+.action-button {
+    margin: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #508991;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50dvh;
+    width: 25dvw;
+    font-family: "K2D";
+    transition: 0.5s;
+}
+
+.action-button:hover {
+    background-color: #3d6f7f;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive design */
+@media (max-width: 900px) {
+    * {
+        background-color: #000000;
+    }
+
+    .body-content {
+        display: none;
+    }
+
+    .mobile-msg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        font-family: "K2D";
+    }
+}
