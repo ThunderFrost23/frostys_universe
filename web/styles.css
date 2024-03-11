@@ -1,6 +1,3 @@
-.mobile-msg {
-    display: none;
-}
 
 body {
     background-image: url(./resources/background.jpg);
@@ -32,6 +29,9 @@ body {
 }
 
 .action-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 100px;
     padding: 10px;
     border-radius: 10px;
@@ -41,7 +41,7 @@ body {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    height: 50dvh;
+    height: 10dvh;
     width: 25dvw;
     font-family: "K2D";
     transition: 0.5s;
@@ -54,9 +54,15 @@ body {
     transition: 0.5s;
 }
 
+#file-consult, #file-upload {
+    display: none;
+}
+
 
 .grid-container {
     display: grid;
+    grid-gap: 10px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -64,20 +70,143 @@ body {
 
 /* Responsive design */
 @media (max-width: 900px) {
-    * {
-        background-color: #000000;
+    .action-button {
+        width: 40dvw;
     }
 
-    .body-content {
-        display: none;
+    .title-name {
+        font-size: 2em;
     }
 
     .mobile-msg {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: "K2D";
+    }
+
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .action-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #508991;
         color: white;
-        font-size: 20px;
+        font-size: 2em;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        height: 10dvh;
+        width: 40dvw;
         font-family: "K2D";
+        transition: 0.5s;
+    }
+
+    .action-button:hover {
+        background-color: #3d6f7f;
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    #file-consult, #file-upload {
+        display: none;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px){
+    .action-button {
+        width: 60dvw;
+    }
+
+    .title-name {
+        font-size: 1.5em;
+    }
+
+    .mobile-msg {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: "K2D";
+    }
+
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .action-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #508991;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        height: 10dvh;
+        width: 60dvw;
+        font-family: "K2D";
+        transition: 0.5s;
+    }
+
+    .action-button:hover {
+        background-color: #3d6f7f;
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    #file-consult, #file-upload {
+        display: none;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
     }
 }

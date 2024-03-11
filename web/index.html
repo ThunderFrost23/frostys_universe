@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap" rel="stylesheet">
+    <script src="../mega_cloud/Upload.js"></script>
     <title>Frosty's Universe - Music Manager</title>
 </head>
 <body>
@@ -17,15 +18,17 @@
         <!-- BUTTONS -->
         <div class="grid-container">
             <div class="action-buttons">
-                <button class="action-button" id="add-music">Upload music</button>
-                <button class="action-button" id="view-music">View musics</button>
+                <label for="file-upload" class="action-button">
+                    <span id="file-upload-label">Upload music</span>
+                    <input id="file-upload" type="file" accept=".mp3,.wav">
+                </label>
+                
+                <label for="file-consult" class="action-button">
+                    <span id="file-consult-label">See music</span>
+                    <input id="file-consult" >
+                </label>
             </div>
         </div>
-    </div>
-
-    <!-- MOBILE MSG -->
-    <div class="mobile-msg">
-        <h1>Nothing to display in mobile.</h1>
     </div>
 </body>
 </html>
