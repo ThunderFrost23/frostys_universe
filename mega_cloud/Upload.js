@@ -1,23 +1,13 @@
-import { storage } from './Storage.js';
+document.getElementById('file-upload').addEventListener('change', async event => {
+  const storage = require('./Storage')
+  const file = event.target.files[0];
+  
+  const upload = await storage.upload({
+    name: file.name,
+    size: file.size,
+    data: file,
+    target: storage.root,
+  });
 
-// Function to handle file upload
-const handleFileUpload = async () => {
-  const fileInput = document.getElementById('file-input');
-  const file = fileInput.files[0];
-
-  if (!file) {
-    console.error('No file selected');
-    return;
-  }
-
-  try {
-    // Upload the selected file to MEGA
-    const node = await storage.upload(file.path);
-    console.log('File uploaded successfully:', node);
-  } catch (error) {
-    console.error('Error uploading file:', error);
-  }
-};
-
-// Listen for changes to the file input
-document.getElementById('file-input').addEventListener('change', handleFileUpload);
+  console.log('Upload complete:', upload);
+});
