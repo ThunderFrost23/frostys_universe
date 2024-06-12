@@ -1,11 +1,19 @@
 <template>
     <div class="grid-container">
-        <button class="upload-btn" @click="click">Upload music</button>
+        <input id="fileUpload" type="file" hidden>
+        <button class="upload-btn" @click="chooseFile()">UPLOAD MUSIC</button>
     </div>
 </template>
 
 <script>
-
+export default {
+  name: 'Home',
+  methods: {
+    chooseFile () {
+      document.getElementById('fileUpload').click()
+    }
+  }
+}
 </script>
 
 <style>
@@ -24,7 +32,8 @@
     cursor: pointer;
     height: 10dvh;
     width: 25dvw;
-    font-family: "K2D";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
     transition: 0.5s;
 }
 

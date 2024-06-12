@@ -6,8 +6,8 @@ const storage = new Storage({
   userAgent: 'WebApp/1.0'
 })
 
-async function main() {
+async function main () {
   await storage.ready
 }
 
-main();
+main()
