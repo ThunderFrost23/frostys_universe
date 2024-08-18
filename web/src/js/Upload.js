@@ -1,8 +1,6 @@
 import storage from './Storage.js'
 
-document.getElementById('file-upload').addEventListener('change', async event => {
-  const file = event.target.files[0]
-
+const uploadFile = async (file) => {
   const upload = await storage.upload({
     name: file.name,
     size: file.size,
@@ -11,4 +9,6 @@ document.getElementById('file-upload').addEventListener('change', async event =>
   })
 
   console.log('Upload complete:', upload)
-})
+}
+
+export default uploadFile
