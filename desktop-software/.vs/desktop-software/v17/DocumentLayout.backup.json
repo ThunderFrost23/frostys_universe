@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|solutionrelative:mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|c:\\users\\thega\\desktop\\travails\\frostys_universe\\desktop-software\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|solutionrelative:app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|c:\\users\\thega\\desktop\\travails\\frostys_universe\\desktop-software\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|solutionrelative:app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|c:\\users\\thega\\desktop\\travails\\frostys_universe\\desktop-software\\desktop-software.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|solutionrelative:desktop-software.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|c:\\users\\thega\\desktop\\travails\\frostys_universe\\desktop-software\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|solutionrelative:app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +30,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\App.axaml.cs",
+              "RelativeDocumentMoniker": "App.axaml.cs",
+              "ToolTip": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\App.axaml.cs",
+              "RelativeToolTip": "App.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T16:48:48.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\App.axaml",
+              "RelativeDocumentMoniker": "App.axaml",
+              "ToolTip": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\App.axaml",
+              "RelativeToolTip": "App.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-27T16:48:40.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\app.manifest",
+              "RelativeDocumentMoniker": "app.manifest",
+              "ToolTip": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\app.manifest",
+              "RelativeToolTip": "app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2024-08-27T16:48:27.708Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -34,13 +82,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "desktop-software.csproj",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\desktop-software.csproj",
               "RelativeDocumentMoniker": "desktop-software.csproj",
-              "ToolTip": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\desktop-software.csproj",
-              "RelativeToolTip": "desktop-software.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\desktop-software.csproj*",
+              "RelativeToolTip": "desktop-software.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-08-27T14:51:18.868Z",
               "EditorCaption": ""

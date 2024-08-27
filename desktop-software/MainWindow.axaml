@@ -2,24 +2,48 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="720"
+		MinWidth="1280" MinHeight="720"
         x:Class="desktop_software.MainWindow"
         Title="Frosty's Universe"
 		Background="#1e1e1e">
 	
 	<!-- Grid definition (3 rows declared) -->
-	<Grid ShowGridLines="False"
-		  RowDefinitions="20, Auto, 40">
+	<Grid ShowGridLines="True"
+    RowDefinitions="120, *, 140">
 
 		<!-- HEADER -->		
 		<Border Grid.Row="0"
 				Background="#292f36"
-				CornerRadius="25"
-				Height="100">
+				CornerRadius="0,0,25,25"
+				Height="120">
 			<TextBlock Foreground="#508991"
-					   FontSize="25">
+				FontSize="40"
+				FontFamily="Kameron"
+				VerticalAlignment="Center"
+				Margin="25,45,1,1">
 				ARTISTS
 			</TextBlock>
+		</Border>
+
+
+		<!-- ARTIST LIST -->
+		<Border Grid.Row="1">
+			<ListBox Background="Transparent">
+				<ListBoxItem>Artist 1</ListBoxItem>
+				<ListBoxItem>Artist 2</ListBoxItem>
+				<ListBoxItem>Artist 3</ListBoxItem>
+			</ListBox>
+		</Border>
+					
+
+
+		<!-- PlAYBACK -->
+		<Border Grid.Row="3"
+				Background="#292f36"
+				CornerRadius="25,25,25,25"
+				Height="120"
+				Margin="10,10,10,10">
 		</Border>
 	</Grid>
 </Window>
