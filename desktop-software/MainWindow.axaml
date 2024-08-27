@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="desktop_software.MainWindow"
+        Title="Frosty's Universe"
+		Background="#1e1e1e">
+	
+	<!-- Grid definition (3 rows declared) -->
+	<Grid ShowGridLines="False"
+		  RowDefinitions="20, Auto, 40">
+
+		<!-- HEADER -->		
+		<Border Grid.Row="0"
+				Background="#292f36"
+				CornerRadius="25"
+				Height="100">
+			<TextBlock Foreground="#508991"
+					   FontSize="25">
+				ARTISTS
+			</TextBlock>
+		</Border>
+	</Grid>
+</Window>

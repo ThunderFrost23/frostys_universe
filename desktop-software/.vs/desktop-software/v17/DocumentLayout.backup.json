@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|c:\\users\\thega\\desktop\\travails\\frostys_universe\\desktop-software\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|solutionrelative:mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|c:\\users\\thega\\desktop\\travails\\frostys_universe\\desktop-software\\desktop-software.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7CAE6EA9-45DD-4204-8706-7ACE18A6D792}|desktop-software.csproj|solutionrelative:desktop-software.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "MainWindow.axaml",
+              "ToolTip": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\MainWindow.axaml*",
+              "RelativeToolTip": "MainWindow.axaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-27T14:53:33.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "desktop-software.csproj",
+              "DocumentMoniker": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\desktop-software.csproj",
+              "RelativeDocumentMoniker": "desktop-software.csproj",
+              "ToolTip": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\desktop-software.csproj",
+              "RelativeToolTip": "desktop-software.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-27T14:51:18.868Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
