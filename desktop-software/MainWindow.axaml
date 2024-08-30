@@ -9,7 +9,7 @@
 		Background="#1e1e1e">
 	
 	<!-- Grid definition (3 rows declared) -->
-	<Grid ShowGridLines="True"
+	<Grid ShowGridLines="False"
     RowDefinitions="120, *, 140">
 
 		<!-- HEADER -->		
@@ -27,15 +27,54 @@
 		</Border>
 
 
+		
 		<!-- ARTIST LIST -->
-		<Border Grid.Row="1">
-			<ListBox Background="Transparent">
-				<ListBoxItem>Artist 1</ListBoxItem>
-				<ListBoxItem>Artist 2</ListBoxItem>
-				<ListBoxItem>Artist 3</ListBoxItem>
-			</ListBox>
-		</Border>
-					
+		<Panel Grid.Row="1" Margin="45">
+			<!-- artist 1 -->
+			<StackPanel Spacing="5" Width="200" HorizontalAlignment="Left">
+				<Border CornerRadius="10" ClipToBounds="True">
+					<Panel Background="#7FFF22DD">
+						<Image Width="200" Stretch="Uniform" />
+						<Panel Height="200">
+							<PathIcon Height="75" Width="75" />
+						</Panel>
+					</Panel>
+				</Border>
+				
+				<TextBlock Text="Artist Name 1" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
+			</StackPanel>
+			
+			
+			<!-- artist 2 -->
+			<StackPanel Spacing="5" Width="200" HorizontalAlignment="Center">
+				<Border CornerRadius="10" ClipToBounds="True">
+					<Panel Background="#7FFF22DD">
+						<Image Width="200" Stretch="Uniform" />
+						<Panel Height="200">
+							<PathIcon Height="75" Width="75" />
+						</Panel>
+					</Panel>
+				</Border>
+				
+				<TextBlock Text="Artist Name 2" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
+			</StackPanel>
+			
+			
+			<!-- artist 3 -->
+			<StackPanel Spacing="5" Width="200" HorizontalAlignment="Right">
+				<Border CornerRadius="10" ClipToBounds="True">
+					<Panel Background="#7FFF22DD">
+						<Image Width="200" Stretch="Uniform" />
+						<Panel Height="200">
+							<PathIcon Height="75" Width="75" />
+						</Panel>
+					</Panel>
+				</Border>
+				
+				<TextBlock Text="Artist Name 3" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
+			</StackPanel>
+		</Panel>
+	
 
 
 		<!-- PlAYBACK -->
