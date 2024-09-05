@@ -77,8 +77,8 @@
               "Title": "MainWindow.axaml",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\MainWindow.axaml",
               "RelativeDocumentMoniker": "MainWindow.axaml",
-              "ToolTip": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\MainWindow.axaml*",
-              "RelativeToolTip": "MainWindow.axaml*",
+              "ToolTip": "C:\\Users\\thega\\Desktop\\Travails\\frostys_universe\\desktop-software\\MainWindow.axaml",
+              "RelativeToolTip": "MainWindow.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-27T14:53:33.547Z",
               "EditorCaption": ""
@@ -93,8 +93,7 @@
               "RelativeToolTip": "MainWindow.axaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T14:02:24.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T14:02:24.014Z"
             },
             {
               "$type": "Document",
