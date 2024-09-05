@@ -13,4 +13,4 @@ Desktop software which permit to store all my songs produced as well as my frien
 Figma: https://www.figma.com/file/gxO8qJiG0nUh6Xbb9evjHf/Frosty's-Universe?type=design&node-id=0-1&mode=design&t=1fzcLkmE9VOjkd1s-0
 
 ## 🗄️Database Design
-![Frosty's_Universe_MCD drawio](https://github.com/ThunderFrost23/frostys_universe/assets/66676905/adf3b90b-c266-4cef-8f60-179004ed2a50)
+![Frosty's_Universe_MCD drawio](https://github.com/user-attachments/assets/69d635a5-6630-4e3e-853e-9a3a63f4c456)
