@@ -3,86 +3,146 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="720"
-		MinWidth="1280" MinHeight="720"
+        MinWidth="1280" MinHeight="720"
         x:Class="desktop_software.MainWindow"
         Title="Frosty's Universe"
-		Background="#1e1e1e">
-	
-	<!-- Grid definition (3 rows declared) -->
-	<Grid ShowGridLines="False"
-    RowDefinitions="120, *, 140">
+        Background="#1e1e1e">
+    
+    <!-- Grid definition (3 rows declared) -->
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="180"/>
+        </Grid.RowDefinitions>
 
-		<!-- HEADER -->		
-		<Border Grid.Row="0"
-				Background="#292f36"
-				CornerRadius="0,0,25,25"
-				Height="120">
-			<TextBlock Foreground="#508991"
-				FontSize="40"
-				FontFamily="Kameron"
-				VerticalAlignment="Center"
-				Margin="25,45,1,1">
-				ARTISTS
-			</TextBlock>
-		</Border>
+        <!-- HEADER -->        
+        <Border Grid.Row="0"
+                Background="#292f36"
+                CornerRadius="0,0,25,25"
+                Height="120">
+            <TextBlock Foreground="#508991"
+                FontSize="40"
+                FontFamily="Kameron"
+                VerticalAlignment="Center"
+                Margin="25,45,1,1">
+                ARTISTS
+            </TextBlock>
+        </Border>
 
+        <!-- ARTIST LIST -->
+        <ScrollViewer Grid.Row="1" Margin="45" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            <UniformGrid Columns="3" Rows="3" VerticalAlignment="Top">
+                <!-- artist 1 -->
+                <StackPanel Spacing="5" Width="200" HorizontalAlignment="Left">
+                    <Border CornerRadius="10" ClipToBounds="True">
+                        <Panel Background="#7FFF22DD">
+                            <Image Width="200" Stretch="Uniform" />
+                            <Panel Height="200">
+                                <PathIcon Height="75" Width="75" />
+                            </Panel>
+                        </Panel>
+                    </Border>
 
-		
-		<!-- ARTIST LIST -->
-		<Panel Grid.Row="1" Margin="45">
-			<!-- artist 1 -->
-			<StackPanel Spacing="5" Width="200" HorizontalAlignment="Left">
-				<Border CornerRadius="10" ClipToBounds="True">
-					<Panel Background="#7FFF22DD">
-						<Image Width="200" Stretch="Uniform" />
-						<Panel Height="200">
-							<PathIcon Height="75" Width="75" />
-						</Panel>
-					</Panel>
-				</Border>
+                    <TextBlock Text="Artist Name 1" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
+                </StackPanel>
+
+                <!-- artist 2 -->
+                <StackPanel Spacing="5" Width="200" HorizontalAlignment="Center">
+                    <Border CornerRadius="10" ClipToBounds="True">
+                        <Panel Background="#7FFF22DD">
+                            <Image Width="200" Stretch="Uniform" />
+                            <Panel Height="200">
+                                <PathIcon Height="75" Width="75" />
+                            </Panel>
+                        </Panel>
+                    </Border>
+
+                    <TextBlock Text="Artist Name 2" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
+                </StackPanel>
+
+                <!-- artist 3 -->
+                <StackPanel Spacing="5" Width="200" HorizontalAlignment="Right">
+                    <Border CornerRadius="10" ClipToBounds="True">
+                        <Panel Background="#7FFF22DD">
+                            <Image Width="200" Stretch="Uniform" />
+                            <Panel Height="200">
+                                <PathIcon Height="75" Width="75" />
+                            </Panel>
+                        </Panel>
+                    </Border>
+
+                    <TextBlock Text="Artist Name 3" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
+                </StackPanel>
+            </UniformGrid>
+        </ScrollViewer>
+
+        <!-- PlAYBACK -->
+        <Border Grid.Row="2"
+                Background="#292f36"
+                CornerRadius="25,25,25,25"
+                Height="150"
+                Margin="10,10,10,10">
+
+            <!-- Music Player Section -->
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+        
+                <!-- Song Info -->
+                <StackPanel Margin="25,0,25,0">
+                    <Border CornerRadius="10" ClipToBounds="True" Margin="0,0,0,5">
+                        <!--Thumbnail-->
+                        <Panel Background="#7FFF22DD">
+                            <PathIcon Height="75" Width="75" />
+                        </Panel>
+                    </Border>
+                        
+                    <!--Song Title + artist's name-->
+                    <TextBlock Text="Stop Me" FontSize="14" Foreground="#508991" FontWeight="Bold" FontFamily="Kameron"/>
+                    <TextBlock Text="Frosty Beat" FontSize="12" Foreground="#508991" FontFamily="Kameron"/>
+                </StackPanel>
+
+                <!-- Playback Controls -->
 				
-				<TextBlock Text="Artist Name 1" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
-			</StackPanel>
-			
-			
-			<!-- artist 2 -->
-			<StackPanel Spacing="5" Width="200" HorizontalAlignment="Center">
-				<Border CornerRadius="10" ClipToBounds="True">
-					<Panel Background="#7FFF22DD">
-						<Image Width="200" Stretch="Uniform" />
-						<Panel Height="200">
-							<PathIcon Height="75" Width="75" />
-						</Panel>
-					</Panel>
-				</Border>
-				
-				<TextBlock Text="Artist Name 2" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
-			</StackPanel>
-			
-			
-			<!-- artist 3 -->
-			<StackPanel Spacing="5" Width="200" HorizontalAlignment="Right">
-				<Border CornerRadius="10" ClipToBounds="True">
-					<Panel Background="#7FFF22DD">
-						<Image Width="200" Stretch="Uniform" />
-						<Panel Height="200">
-							<PathIcon Height="75" Width="75" />
-						</Panel>
-					</Panel>
-				</Border>
-				
-				<TextBlock Text="Artist Name 3" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
-			</StackPanel>
-		</Panel>
-	
+				<!--______ Button Styles ________-->
+				<!-- when in play  -->
+				<Style Selector="ToggleButton.player-btn Image#InPlay">
+					<Setter Property="IsVisible" Value="True" />
+				</Style>
 
+				<Style Selector="ToggleButton.player-btn Image#InPause">
+					<Setter Property="IsVisible" Value="False" />
+				</Style>
 
-		<!-- PlAYBACK -->
-		<Border Grid.Row="3"
-				Background="#292f36"
-				CornerRadius="25,25,25,25"
-				Height="120"
-				Margin="10,10,10,10">
-		</Border>
-	</Grid>
+				 <!-- when in pause --> 
+				<Style Selector="ToggleButton.player-btn:pressed Image#InPlay">
+					<Setter Property="IsVisible" Value="False" />
+				</Style>
+
+				<Style Selector="ToggleButton.player-btn:pressed Image#InPause">
+					<Setter Property="IsVisible" Value="True" />
+				</Style>
+				<!--______ Button Styles ________-->
+				
+				
+				<!--Play/Pause button-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+					<ToggleButton Classes="player-btn" HorizontalAlignment="Center">
+						<Panel>
+							<Image x:Name="InPlay" Source="/Assets/pause-btn.png" Stretch="None" />
+							<Image x:Name="InPause" Source="/Assets/play-btn.png" Stretch="None" />
+						</Panel>
+					</ToggleButton>
+					
+                    <Button Content="⏮" Margin="10"/>
+                    <Slider Minimum="0" Maximum="100" Value="30" Width="200" Margin="10,0"/>
+                    <TextBlock Text="01:27" Foreground="#508991" Margin="10" FontFamily="Kameron"/>
+                    <TextBlock Text="03:45" Foreground="#508991" Margin="10" FontFamily="Kameron"/>
+                    <Button Content="⏭️" Margin="10"/>
+
+                    <Slider Minimum="0" Maximum="100" Value="30" Width="100" Margin="10,0"/>
+                    <Button Content="🔊" Margin="10" Background="Transparent"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
 </Window>
