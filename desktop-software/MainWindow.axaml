@@ -7,7 +7,7 @@
         x:Class="desktop_software.MainWindow"
         Title="Frosty's Universe"
         Background="#1e1e1e">
-    
+
     <!-- Grid definition (3 rows declared) -->
     <Grid ShowGridLines="False">
         <Grid.RowDefinitions>
@@ -102,47 +102,135 @@
                 </StackPanel>
 
                 <!-- Playback Controls -->
-				
-				<!--______ Button Styles ________-->
-				<!-- when in play  -->
-				<Style Selector="ToggleButton.player-btn Image#InPlay">
-					<Setter Property="IsVisible" Value="True" />
-				</Style>
-
-				<Style Selector="ToggleButton.player-btn Image#InPause">
-					<Setter Property="IsVisible" Value="False" />
-				</Style>
-
-				 <!-- when in pause --> 
-				<Style Selector="ToggleButton.player-btn:pressed Image#InPlay">
-					<Setter Property="IsVisible" Value="False" />
-				</Style>
-
-				<Style Selector="ToggleButton.player-btn:pressed Image#InPause">
-					<Setter Property="IsVisible" Value="True" />
-				</Style>
-				<!--______ Button Styles ________-->
-				
-				
 				<!--Play/Pause button-->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-					<ToggleButton Classes="player-btn" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+					<ToggleButton Classes="player-btn" VerticalAlignment="Center" HorizontalAlignment="Center">
 						<Panel>
-							<Image x:Name="InPlay" Source="/Assets/pause-btn.png" Stretch="None" />
+                            <Image x:Name="InPlay" Source="/Assets/pause-btn.png" Stretch="None" />
 							<Image x:Name="InPause" Source="/Assets/play-btn.png" Stretch="None" />
 						</Panel>
+
+						<ToggleButton.Styles>
+							<Style Selector="ToggleButton">
+								<Setter Property="Background" Value="Transparent"/>
+							</Style>
+							<Style Selector="ToggleButton:pointerover">
+								<Setter Property="Background" Value="Transparent"/>
+							</Style>
+						</ToggleButton.Styles>
 					</ToggleButton>
+
+					<!--Back button--> 
+                    <Button VerticalAlignment="Center" HorizontalAlignment="Center">
+						<Button.Content>
+							<StackPanel Orientation="Horizontal">
+							    <Image x:Name="backLogo" Source="/Assets/back.png" Stretch="None" />
+						    </StackPanel>
+						</Button.Content>
+
+						<!-- Remove hover and background -->
+						<Button.Styles>
+							<Style Selector="Button">
+								<Setter Property="Background" Value="Transparent"/>
+							</Style>
+							<Style Selector="Button:pointerover /template/ ContentPresenter">
+								<Setter Property="Background" Value="Transparent"/>
+							</Style>
+						</Button.Styles>
+					</Button>
 					
-                    <Button Content="⏮" Margin="10"/>
                     <Slider Minimum="0" Maximum="100" Value="30" Width="200" Margin="10,0"/>
                     <TextBlock Text="01:27" Foreground="#508991" Margin="10" FontFamily="Kameron"/>
                     <TextBlock Text="03:45" Foreground="#508991" Margin="10" FontFamily="Kameron"/>
-                    <Button Content="⏭️" Margin="10"/>
+
+					<!--Forward button-->
+					<Button VerticalAlignment="Center" HorizontalAlignment="Center">
+						<Button.Content>
+							<StackPanel Orientation="Horizontal">
+								<Image x:Name="forwardLogo" Source="/Assets/forward.png" Stretch="None" />
+							</StackPanel>
+						</Button.Content>
+
+						<!-- Remove hover and background -->
+						<Button.Styles>
+							<Style Selector="Button">
+								<Setter Property="Background" Value="Transparent"/>
+							</Style>
+							<Style Selector="Button:pointerover /template/ ContentPresenter">
+								<Setter Property="Background" Value="Transparent"/>
+							</Style>
+						</Button.Styles>
+					</Button>
 
                     <Slider Minimum="0" Maximum="100" Value="30" Width="100" Margin="10,0"/>
-                    <Button Content="🔊" Margin="10" Background="Transparent"/>
+
+					<!--Volume button-->
+					<ToggleButton Classes="volume-btn" VerticalAlignment="Center" HorizontalAlignment="Center">
+						<Panel>
+							<Image x:Name="volume" Source="/Assets/volume.png" Stretch="None" />
+							<Image x:Name="noVolume" Source="/Assets/no-volume.png" Stretch="None" />
+						</Panel>
+
+						<ToggleButton.Styles>
+							<Style Selector="ToggleButton">
+								<Setter Property="Background" Value="Transparent"/>
+							</Style>
+							<Style Selector="ToggleButton:pointerover">
+								<Setter Property="Background" Value="Transparent"/>
+							</Style>
+						</ToggleButton.Styles>
+					</ToggleButton>
                 </StackPanel>
             </StackPanel>
         </Border>
     </Grid>
+
+	
+	<!--______ Button Styles ________-->
+	<Window.Styles>
+		<!-- when in play  -->
+		<Style Selector="ToggleButton.player-btn Image#InPlay">
+			<Setter Property="IsVisible" Value="False"/>
+		</Style>
+		
+		<Style Selector="ToggleButton.player-btn:checked Image#InPlay">
+			<Setter Property="IsVisible" Value="True"/>
+		</Style>
+
+		<!-- when in pause -->
+		<Style Selector="ToggleButton.player-btn Image#InPause">
+			<Setter Property="IsVisible" Value="True"/>
+		</Style>
+		
+		<Style Selector="ToggleButton.player-btn:checked Image#InPause">
+			<Setter Property="IsVisible" Value="False"/>
+		</Style>
+
+
+		
+
+		<!-- when volume -->
+		<Style Selector="ToggleButton.volume-btn Image#volume">
+			<Setter Property="IsVisible" Value="True"/>
+		</Style>
+
+		<Style Selector="ToggleButton.volume-btn:checked Image#volume">
+			<Setter Property="IsVisible" Value="False"/>
+		</Style>
+
+		<!-- when no volume -->
+		<Style Selector="ToggleButton.volume-btn Image#noVolume">
+			<Setter Property="IsVisible" Value="False"/>
+		</Style>
+
+		<Style Selector="ToggleButton.volume-btn:checked Image#noVolume">
+			<Setter Property="IsVisible" Value="True"/>
+		</Style>
+
+		<!-- when button pressed, no background color -->
+		<Style Selector="ToggleButton:checked /template/ ContentPresenter#PART_ContentPresenter">
+			<Setter Property="Background" Value="Transparent"/>
+		</Style>
+	</Window.Styles>
+	<!--______ Button Styles ________-->
 </Window>
