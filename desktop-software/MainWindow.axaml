@@ -8,163 +8,193 @@
         Title="Frosty's Universe"
         Background="#1e1e1e">
 
-    <!-- Grid definition (3 rows declared) -->
-    <Grid ShowGridLines="False">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="120"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="180"/>
-        </Grid.RowDefinitions>
+	<!-- Grid definition (3 rows declared) -->
+	<Grid ShowGridLines="False">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="120"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="180"/>
+		</Grid.RowDefinitions>
 
-        <!-- HEADER -->        
-        <Border Grid.Row="0"
+		<!-- HEADER -->
+		<Border Grid.Row="0"
                 Background="#292f36"
                 CornerRadius="0,0,25,25"
                 Height="120">
-            <TextBlock Foreground="#508991"
+			<TextBlock Foreground="#508991"
                 FontSize="40"
                 FontFamily="Kameron"
                 VerticalAlignment="Center"
                 Margin="25,45,1,1">
-                ARTISTS
-            </TextBlock>
-        </Border>
+				ARTISTS
+			</TextBlock>
+		</Border>
 
-        <!-- ARTIST LIST -->
-        <ScrollViewer Grid.Row="1" Margin="45" ScrollViewer.VerticalScrollBarVisibility="Hidden">
-            <UniformGrid Columns="3" Rows="3" VerticalAlignment="Top">
-                <!-- artist 1 -->
-                <StackPanel Spacing="5" Width="200" HorizontalAlignment="Left">
-                    <Border CornerRadius="10" ClipToBounds="True">
-                        <Panel Background="#7FFF22DD">
-                            <Image Width="200" Stretch="Uniform" />
-                            <Panel Height="200">
-                                <PathIcon Height="75" Width="75" />
-                            </Panel>
-                        </Panel>
-                    </Border>
+		<!-- ARTIST LIST -->
+		<ScrollViewer Grid.Row="1" Margin="45" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+			<UniformGrid Columns="3" Rows="3" VerticalAlignment="Top">
+				<!-- artist 1 -->
+				<StackPanel Spacing="5" Width="200" HorizontalAlignment="Left">
+					<Border CornerRadius="10" ClipToBounds="True">
+						<Panel Background="#7FFF22DD">
+							<Image Width="200" Stretch="Uniform" />
+							<Panel Height="200">
+								<PathIcon Height="75" Width="75" />
+							</Panel>
+						</Panel>
+					</Border>
 
-                    <TextBlock Text="Artist Name 1" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
-                </StackPanel>
+					<TextBlock Text="Artist Name 1" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
+				</StackPanel>
 
-                <!-- artist 2 -->
-                <StackPanel Spacing="5" Width="200" HorizontalAlignment="Center">
-                    <Border CornerRadius="10" ClipToBounds="True">
-                        <Panel Background="#7FFF22DD">
-                            <Image Width="200" Stretch="Uniform" />
-                            <Panel Height="200">
-                                <PathIcon Height="75" Width="75" />
-                            </Panel>
-                        </Panel>
-                    </Border>
+				<!-- artist 2 -->
+				<StackPanel Spacing="5" Width="200" HorizontalAlignment="Center">
+					<Border CornerRadius="10" ClipToBounds="True">
+						<Panel Background="#7FFF22DD">
+							<Image Width="200" Stretch="Uniform" />
+							<Panel Height="200">
+								<PathIcon Height="75" Width="75" />
+							</Panel>
+						</Panel>
+					</Border>
 
-                    <TextBlock Text="Artist Name 2" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
-                </StackPanel>
+					<TextBlock Text="Artist Name 2" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
+				</StackPanel>
 
-                <!-- artist 3 -->
-                <StackPanel Spacing="5" Width="200" HorizontalAlignment="Right">
-                    <Border CornerRadius="10" ClipToBounds="True">
-                        <Panel Background="#7FFF22DD">
-                            <Image Width="200" Stretch="Uniform" />
-                            <Panel Height="200">
-                                <PathIcon Height="75" Width="75" />
-                            </Panel>
-                        </Panel>
-                    </Border>
+				<!-- artist 3 -->
+				<StackPanel Spacing="5" Width="200" HorizontalAlignment="Right">
+					<Border CornerRadius="10" ClipToBounds="True">
+						<Panel Background="#7FFF22DD">
+							<Image Width="200" Stretch="Uniform" />
+							<Panel Height="200">
+								<PathIcon Height="75" Width="75" />
+							</Panel>
+						</Panel>
+					</Border>
 
-                    <TextBlock Text="Artist Name 3" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
-                </StackPanel>
-            </UniformGrid>
-        </ScrollViewer>
+					<TextBlock Text="Artist Name 3" Foreground="#508991" FontSize="20" FontFamily="Kameron" HorizontalAlignment="Center" />
+				</StackPanel>
+			</UniformGrid>
+		</ScrollViewer>
 
-        <!-- PlAYBACK -->
-        <Border Grid.Row="2"
+		<!-- PlAYBACK -->
+		<Border Grid.Row="2"
                 Background="#292f36"
                 CornerRadius="25,25,25,25"
                 Height="150"
                 Margin="10,10,10,10">
 
-            <!-- Music Player Section -->
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-        
-                <!-- Song Info -->
-                <StackPanel Margin="25,0,25,0">
-                    <Border CornerRadius="10" ClipToBounds="True" Margin="0,0,0,5">
-                        <!--Thumbnail-->
-                        <Panel Background="#7FFF22DD">
-                            <PathIcon Height="75" Width="75" />
-                        </Panel>
-                    </Border>
-                        
-                    <!--Song Title + artist's name-->
-                    <TextBlock Text="Stop Me" FontSize="14" Foreground="#508991" FontWeight="Bold" FontFamily="Kameron"/>
-                    <TextBlock Text="Frosty Beat" FontSize="12" Foreground="#508991" FontFamily="Kameron"/>
+			<Grid VerticalAlignment="Center" ShowGridLines="True">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="2*" />
+					<!-- Song Info + Playback -->
+					<ColumnDefinition Width="4*" />
+					<!-- Time code -->
+					<ColumnDefinition Width="2*" />
+					<!-- Volume control -->
+				</Grid.ColumnDefinitions>
+
+                <!-- Left Section: Song Info + Playback -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                    <!-- Song Info -->
+                    <StackPanel Margin="25,0,25,0" VerticalAlignment="Center">
+                        <Border CornerRadius="10" ClipToBounds="True" Margin="0,0,0,5">
+                            <Panel Background="#7FFF22DD">
+                                <PathIcon Height="75" Width="75" />
+                            </Panel>
+                        </Border>
+                        <TextBlock Text="Stop Me" FontSize="14" Foreground="#508991" FontWeight="Bold" FontFamily="Kameron"/>
+                        <TextBlock Text="Frosty Beat" FontSize="12" Foreground="#508991" FontFamily="Kameron"/>
+                    </StackPanel>
+
+                    <!-- Playback Buttons -->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="25,0,0,0">
+                        <!--Play/Pause button-->
+                        <ToggleButton Classes="player-btn" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Panel>
+                                <Image x:Name="InPlay" Source="/Assets/pause-btn.png" Stretch="None" />
+                                <Image x:Name="InPause" Source="/Assets/play-btn.png" Stretch="None" />
+                            </Panel>
+
+                            <!-- Remove background -->
+                            <ToggleButton.Styles>
+                                <Style Selector="ToggleButton">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Style>
+                                <Style Selector="ToggleButton:pointerover">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Style>
+                            </ToggleButton.Styles>
+                        </ToggleButton>
+                    </StackPanel>
                 </StackPanel>
 
-                <!-- Playback Controls -->
-				<!--Play/Pause button-->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-					<ToggleButton Classes="player-btn" VerticalAlignment="Center" HorizontalAlignment="Center">
-						<Panel>
-                            <Image x:Name="InPlay" Source="/Assets/pause-btn.png" Stretch="None" />
-							<Image x:Name="InPause" Source="/Assets/play-btn.png" Stretch="None" />
-						</Panel>
+				<!-- Center section: Time display and navigation buttons -->
+				<Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto" />
+						<!-- Back button -->
+						<ColumnDefinition Width="Auto" />
+						<!-- Start Time -->
+						<ColumnDefinition Width="*" />
+						<!-- Slider -->
+						<ColumnDefinition Width="Auto" />
+						<!-- End Time -->
+						<ColumnDefinition Width="Auto" />
+						<!-- Forward button -->
+					</Grid.ColumnDefinitions>
 
-						<ToggleButton.Styles>
-							<Style Selector="ToggleButton">
-								<Setter Property="Background" Value="Transparent"/>
-							</Style>
-							<Style Selector="ToggleButton:pointerover">
-								<Setter Property="Background" Value="Transparent"/>
-							</Style>
-						</ToggleButton.Styles>
-					</ToggleButton>
-
-					<!--Back button--> 
-                    <Button VerticalAlignment="Center" HorizontalAlignment="Center">
+					<!-- Back button -->
+					<Button Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
 						<Button.Content>
 							<StackPanel Orientation="Horizontal">
-							    <Image x:Name="backLogo" Source="/Assets/back.png" Stretch="None" />
-						    </StackPanel>
+								<Image x:Name="backLogo" Source="/Assets/back.png" Stretch="None" />
+							</StackPanel>
 						</Button.Content>
 
-						<!-- Remove hover and background -->
+						<!-- Remove background -->
 						<Button.Styles>
 							<Style Selector="Button">
 								<Setter Property="Background" Value="Transparent"/>
 							</Style>
-							<Style Selector="Button:pointerover /template/ ContentPresenter">
+							<Style Selector="Button:pointerover">
 								<Setter Property="Background" Value="Transparent"/>
 							</Style>
 						</Button.Styles>
 					</Button>
-					
-                    <Slider Minimum="0" Maximum="100" Value="30" Width="200" Margin="10,0"/>
-                    <TextBlock Text="01:27" Foreground="#508991" Margin="10" FontFamily="Kameron"/>
-                    <TextBlock Text="03:45" Foreground="#508991" Margin="10" FontFamily="Kameron"/>
 
-					<!--Forward button-->
-					<Button VerticalAlignment="Center" HorizontalAlignment="Center">
+					<!-- Start Time -->
+					<TextBlock Grid.Column="1" Text="01:27" Foreground="#508991" FontFamily="Kameron" FontSize="14" VerticalAlignment="Center" Margin="10" />
+
+					<!-- Slider -->
+					<Slider Grid.Column="2" Minimum="0" Maximum="100" Value="30" Width="350" Margin="10,0" HorizontalAlignment="Center" />
+
+					<!-- End Time -->
+					<TextBlock Grid.Column="3" Text="03:45" Foreground="#508991" FontFamily="Kameron" FontSize="14" VerticalAlignment="Center" Margin="10" />
+
+					<!-- Forward button -->
+					<Button Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center">
 						<Button.Content>
 							<StackPanel Orientation="Horizontal">
 								<Image x:Name="forwardLogo" Source="/Assets/forward.png" Stretch="None" />
 							</StackPanel>
 						</Button.Content>
 
-						<!-- Remove hover and background -->
+						<!-- Remove background -->
 						<Button.Styles>
 							<Style Selector="Button">
 								<Setter Property="Background" Value="Transparent"/>
 							</Style>
-							<Style Selector="Button:pointerover /template/ ContentPresenter">
+							<Style Selector="Button:pointerover">
 								<Setter Property="Background" Value="Transparent"/>
 							</Style>
 						</Button.Styles>
 					</Button>
+				</Grid>
 
-                    <Slider Minimum="0" Maximum="100" Value="30" Width="100" Margin="10,0"/>
-
-					<!--Volume button-->
+				<!-- Right Section: Volume Control -->
+				<StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,0,10,0">
+					<Slider Minimum="0" Maximum="100" Value="30" Width="100" Margin="10,0"/>
 					<ToggleButton Classes="volume-btn" VerticalAlignment="Center" HorizontalAlignment="Center">
 						<Panel>
 							<Image x:Name="volume" Source="/Assets/volume.png" Stretch="None" />
@@ -180,19 +210,18 @@
 							</Style>
 						</ToggleButton.Styles>
 					</ToggleButton>
-                </StackPanel>
-            </StackPanel>
-        </Border>
-    </Grid>
+				</StackPanel>
+			</Grid>
+		</Border>
+	</Grid>
 
-	
 	<!--______ Button Styles ________-->
 	<Window.Styles>
 		<!-- when in play  -->
 		<Style Selector="ToggleButton.player-btn Image#InPlay">
 			<Setter Property="IsVisible" Value="False"/>
 		</Style>
-		
+
 		<Style Selector="ToggleButton.player-btn:checked Image#InPlay">
 			<Setter Property="IsVisible" Value="True"/>
 		</Style>
@@ -201,13 +230,10 @@
 		<Style Selector="ToggleButton.player-btn Image#InPause">
 			<Setter Property="IsVisible" Value="True"/>
 		</Style>
-		
+
 		<Style Selector="ToggleButton.player-btn:checked Image#InPause">
 			<Setter Property="IsVisible" Value="False"/>
 		</Style>
-
-
-		
 
 		<!-- when volume -->
 		<Style Selector="ToggleButton.volume-btn Image#volume">
