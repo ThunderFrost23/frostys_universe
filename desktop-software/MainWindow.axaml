@@ -2,11 +2,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:desktop_software"
         mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="720"
         MinWidth="1280" MinHeight="720"
         x:Class="desktop_software.MainWindow"
         Title="Frosty's Universe"
-        Background="#1e1e1e">
+        Background="#1e1e1e"
+        x:DataType="local:MainWindow">
 
 	<!-- Grid definition (3 rows declared) -->
 	<Grid ShowGridLines="False">
@@ -84,7 +86,7 @@
                 Height="150"
                 Margin="10,10,10,10">
 
-			<Grid VerticalAlignment="Center" ShowGridLines="True">
+			<Grid VerticalAlignment="Center" ShowGridLines="False">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="2*" />
 					<!-- Song Info + Playback -->
@@ -148,7 +150,7 @@
 					<Button Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
 						<Button.Content>
 							<StackPanel Orientation="Horizontal">
-								<Image x:Name="backLogo" Source="/Assets/back.png" Stretch="None" />
+								<Image x:Name="BackLogo" Source="/Assets/back.png" Stretch="None" />
 							</StackPanel>
 						</Button.Content>
 
@@ -167,16 +169,16 @@
 					<TextBlock Grid.Column="1" Text="01:27" Foreground="#508991" FontFamily="Kameron" FontSize="14" VerticalAlignment="Center" Margin="10" />
 
 					<!-- Slider -->
-					<Slider Grid.Column="2" Minimum="0" Maximum="100" Value="30" Width="350" Margin="10,0" HorizontalAlignment="Center" />
 
 					<!-- End Time -->
 					<TextBlock Grid.Column="3" Text="03:45" Foreground="#508991" FontFamily="Kameron" FontSize="14" VerticalAlignment="Center" Margin="10" />
+					<Slider Grid.Column="2" Minimum="0" Maximum="100" Value="30" Width="350" Margin="10,0" HorizontalAlignment="Center" />
 
 					<!-- Forward button -->
 					<Button Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center">
 						<Button.Content>
 							<StackPanel Orientation="Horizontal">
-								<Image x:Name="forwardLogo" Source="/Assets/forward.png" Stretch="None" />
+								<Image x:Name="ForwardLogo" Source="/Assets/forward.png" Stretch="None" />
 							</StackPanel>
 						</Button.Content>
 
@@ -193,24 +195,27 @@
 				</Grid>
 
 				<!-- Right Section: Volume Control -->
-				<StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,0,10,0">
-					<Slider Minimum="0" Maximum="100" Value="30" Width="100" Margin="10,0"/>
-					<ToggleButton Classes="volume-btn" VerticalAlignment="Center" HorizontalAlignment="Center">
-						<Panel>
-							<Image x:Name="volume" Source="/Assets/volume.png" Stretch="None" />
-							<Image x:Name="noVolume" Source="/Assets/no-volume.png" Stretch="None" />
-						</Panel>
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,0,10,0">
+	                <!-- Volume slider -->
+	                <Slider x:Name="VolumeSlider" Minimum="0" Maximum="100" Value="30" Width="100" Margin="10,0"/>
+	                
+	                <!-- Mute button -->
+	                <ToggleButton x:Name="MuteButton" Classes="volume-btn" VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="False">
+		                <Panel>
+			                <Image x:Name="Volume" Source="/Assets/volume.png" Stretch="None" />
+			                <Image x:Name="NoVolume" Source="/Assets/no-volume.png" Stretch="None" />
+		                </Panel>
 
-						<ToggleButton.Styles>
-							<Style Selector="ToggleButton">
-								<Setter Property="Background" Value="Transparent"/>
-							</Style>
-							<Style Selector="ToggleButton:pointerover">
-								<Setter Property="Background" Value="Transparent"/>
-							</Style>
-						</ToggleButton.Styles>
-					</ToggleButton>
-				</StackPanel>
+		                <ToggleButton.Styles>
+			                <Style Selector="ToggleButton">
+				                <Setter Property="Background" Value="Transparent"/>
+			                </Style>
+			                <Style Selector="ToggleButton:pointerover">
+				                <Setter Property="Background" Value="Transparent"/>
+			                </Style>
+		                </ToggleButton.Styles>
+	                </ToggleButton>
+                </StackPanel>
 			</Grid>
 		</Border>
 	</Grid>
@@ -236,20 +241,20 @@
 		</Style>
 
 		<!-- when volume -->
-		<Style Selector="ToggleButton.volume-btn Image#volume">
+		<Style Selector="ToggleButton.volume-btn Image#Volume">
 			<Setter Property="IsVisible" Value="True"/>
 		</Style>
 
-		<Style Selector="ToggleButton.volume-btn:checked Image#volume">
+		<Style Selector="ToggleButton.volume-btn:checked Image#Volume">
 			<Setter Property="IsVisible" Value="False"/>
 		</Style>
 
 		<!-- when no volume -->
-		<Style Selector="ToggleButton.volume-btn Image#noVolume">
+		<Style Selector="ToggleButton.volume-btn Image#NoVolume">
 			<Setter Property="IsVisible" Value="False"/>
 		</Style>
 
-		<Style Selector="ToggleButton.volume-btn:checked Image#noVolume">
+		<Style Selector="ToggleButton.volume-btn:checked Image#NoVolume">
 			<Setter Property="IsVisible" Value="True"/>
 		</Style>
 
