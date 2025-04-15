@@ -46,23 +46,23 @@
           "dependencies": {
             "Avalonia": {
               "target": "Package",
-              "version": "[11.2.5, )"
+              "version": "[11.3.0-beta2, )"
             },
             "Avalonia.Desktop": {
               "target": "Package",
-              "version": "[11.2.5, )"
+              "version": "[11.3.0-beta2, )"
             },
             "Avalonia.Diagnostics": {
               "target": "Package",
-              "version": "[11.2.5, )"
+              "version": "[11.3.0-beta2, )"
             },
             "Avalonia.Fonts.Inter": {
               "target": "Package",
-              "version": "[11.2.5, )"
+              "version": "[11.3.0-beta2, )"
             },
             "Avalonia.Themes.Fluent": {
               "target": "Package",
-              "version": "[11.2.5, )"
+              "version": "[11.3.0-beta2, )"
             }
           },
           "imports": [

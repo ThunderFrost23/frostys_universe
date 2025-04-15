@@ -83,7 +83,6 @@ C:/Users/thega/Desktop/Travails/frostys_universe/desktop-software/obj/Debug/net8
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/bin/Debug/net8.0/Avalonia.Vulkan.dll
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/bin/Debug/net8.0/Avalonia.dll
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/bin/Debug/net8.0/Avalonia.Controls.ColorPicker.dll
-/Users/rlauret/RiderProjects/frostys_universe/desktop-software/bin/Debug/net8.0/Avalonia.Controls.DataGrid.dll
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/bin/Debug/net8.0/Avalonia.Desktop.dll
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/bin/Debug/net8.0/Avalonia.Diagnostics.dll
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/bin/Debug/net8.0/Avalonia.Fonts.Inter.dll
@@ -128,9 +127,10 @@ C:/Users/thega/Desktop/Travails/frostys_universe/desktop-software/obj/Debug/net8
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/desktop-software.AssemblyInfo.cs
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/desktop-software.csproj.CoreCompileInputs.cache
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/desktop-software.sourcelink.json
-/Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/Avalonia/desktop-software.dll
-/Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/Avalonia/desktop-software.pdb
-/Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/refint/Avalonia/desktop-software.dll
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/desktop-.72BA8383.Up2Date
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/desktop-software.genruntimeconfig.cache
 /Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/ref/desktop-software.dll
+/Users/rlauret/RiderProjects/frostys_universe/desktop-software/bin/Debug/net8.0/Avalonia.Win32.Automation.dll
+/Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/desktop-software.dll
+/Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/refint/desktop-software.dll
+/Users/rlauret/RiderProjects/frostys_universe/desktop-software/obj/Debug/net8.0/desktop-software.pdb

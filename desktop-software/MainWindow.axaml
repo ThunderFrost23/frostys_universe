@@ -168,11 +168,11 @@
 					<!-- Start Time -->
 					<TextBlock Grid.Column="1" Text="01:27" Foreground="#508991" FontFamily="Kameron" FontSize="14" VerticalAlignment="Center" Margin="10" />
 
-					<!-- Slider -->
-
 					<!-- End Time -->
 					<TextBlock Grid.Column="3" Text="03:45" Foreground="#508991" FontFamily="Kameron" FontSize="14" VerticalAlignment="Center" Margin="10" />
-					<Slider Grid.Column="2" Minimum="0" Maximum="100" Value="30" Width="350" Margin="10,0" HorizontalAlignment="Center" />
+					
+					<!-- Slider -->
+					<Slider Grid.Column="2" Minimum="0" Maximum="100" Value="30" Width="350" Margin="10,0" HorizontalAlignment="Center"/>
 
 					<!-- Forward button -->
 					<Button Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -262,6 +262,31 @@
 		<Style Selector="ToggleButton:checked /template/ ContentPresenter#PART_ContentPresenter">
 			<Setter Property="Background" Value="Transparent"/>
 		</Style>
+		
+		<!-- custom slider for volume and playback -->
+		<Style Selector="Slider:horizontal">
+			<Setter Property="MinWidth" Value="40" />
+			<Setter Property="MinHeight" Value="20" />
+			<Setter Property="Background" Value="#000000"/>
+			<Setter Property="Foreground" Value="#508991"/>
+
+			<Style Selector="^ Track">
+				<Style Selector="^ RepeatButton Border">
+					<Setter Property="Height" Value="6"/>
+				</Style>
+                        
+				<Style Selector="^ Thumb">
+					<Setter Property="Height" Value="15"/>
+					<Setter Property="Width" Value="15"/>
+					<Setter Property="BorderBrush" Value="#508991"/>
+					<Setter Property="Background" Value="#508991"/>
+				</Style>
+			</Style>
+		</Style>
+		
+		<!-- <Style Selector="Slider:pointerover"> -->
+		<!-- 	<Setter Property="IsVisible" Value="False"/> -->
+		<!-- </Style> -->
 	</Window.Styles>
 	<!--______ Button Styles ________-->
 </Window>
